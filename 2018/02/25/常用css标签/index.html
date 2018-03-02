@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://yoursite.com/images/xiangduidingwei.jpg">
 <meta property="og:image" content="http://yoursite.com/images/xiangduidingwei2.jpg">
 <meta property="og:image" content="http://yoursite.com/images/peisebiao.jpg">
-<meta property="og:updated_time" content="2018-02-26T05:27:28.752Z">
+<meta property="og:updated_time" content="2018-03-02T05:57:18.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用css标签">
 <meta name="twitter:description" content="常用css标签只是总结，不会很全面。">
@@ -521,6 +521,44 @@
 </ol>
 </li>
 </ul>
+<h3 id="零散笔记"><a href="#零散笔记" class="headerlink" title="零散笔记"></a>零散笔记</h3><ul>
+<li><p>将页面距为零</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line"><span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line"><span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>CSS链接语句</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"01.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">tyee</span>=<span class="string">"text/css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>定义水平线样式</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">size</span>=<span class="string">"5px"</span> <span class="attr">width</span>=<span class="string">"800px"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入视屏</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"位置/名字.mp4"</span> <span class="attr">winth</span>=<span class="string">"300px"</span> <span class="attr">height</span>=<span class="string">"240px"</span>&gt;</span><span class="tag">&lt;/<span class="name">embed</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"200"</span> <span class="attr">height</span>=<span class="string">"200"</span> <span class="attr">sre</span>=<span class="string">"http://......"</span> <span class="attr">controls</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>改变背景颜色<br><code>background-color</code>属性为元素设置背景颜色<br>这条代码把元素的背景颜色为灰色：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;<span class="attribute">background-color</span>:gray;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插图背景图片<br><code>background-images</code>属性插入背景图片，其默认值是none(表示背景上没有任何图片)<br>如果需要设置一个背景图片，则必须为这个属性设置一个url值：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;<span class="attribute">baclground-images</span>:<span class="built_in">url</span>(/img/01.jpg)&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>background-position</code>改变背景图片位置<br><code>background-color:grak;</code>多余部分用颜色来补充<br><code>background-repear</code>:<code>no</code>|<code>repear-y</code>|<code>repear-x</code>;<br><code>no</code>:不允许重复<br><code>repear-y</code>:横向平铺<br><code>repear-x</code>:纵向平铺</p>
+</li>
+<li><p><code>background-clip</code>:<code>border-box</code>|<code>padding-box</code>|<code>content-box</code>;<br><code>border-box</code>:背景被裁剪到边框盒<br><code>padding-box</code>:背景被裁剪到内边距框<br><code>content-box</code>:背景被裁剪到内容框</p>
+</li>
+<li><p>将直角变成圆角<br>将四个角都变成圆角:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border-radius</span><span class="selector-pseudo">:40px</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>只有两个角是圆角:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">border-radius</span><span class="selector-pseudo">:0</span> 0 13<span class="selector-tag">px</span> 13<span class="selector-tag">px</span>;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>首行缩进<br>缩进两个字符</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;<span class="attribute">text-indent</span>:<span class="number">2em</span>;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>移除无序列表中的小点<br>yan</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&#123;<span class="attribute">list-style</span>:none;&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
 
@@ -774,11 +812,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
